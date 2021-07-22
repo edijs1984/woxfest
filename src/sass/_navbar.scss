@@ -1,0 +1,104 @@
+@import "./variables";
+nav {
+  height: 5vh;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  font-family: Boldfont;
+}
+
+%navlinks-shared {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  background: transparent;
+  font-size: medium;
+  :hover {
+    color: $green;
+  }
+}
+
+.nav-links {
+  @extend %navlinks-shared;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  border-bottom: 2px solid;
+  border-color: white;
+}
+.nav-links2 {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+a {
+  color: $lightgrey;
+  text-decoration: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.liactive {
+  border-bottom: 6px solid;
+  border-color: $green;
+  padding: 1.25%;
+}
+.linone {
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: transparent;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+    background: transparent;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .nav-links {
+    @extend %navlinks-shared;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: $darkgrey;
+    flex-direction: column;
+    pointer-events: none;
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+  .nav-links2 {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: $darkgrey;
+    flex-direction: column;
+    pointer-events: all;
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    transition: all 1s ease-out;
+    :hover {
+      color: $orange;
+    }
+  }
+}

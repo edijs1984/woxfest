@@ -1,0 +1,130 @@
+@import "./navbar";
+@import "./variables";
+@import "./tickets";
+@import "./images";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section {
+  height: 100vh;
+  &-home {
+    background-image: $bg-image;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Headingfont;
+    color: #99ff00;
+  }
+  &-program {
+    background-image: $bg-image;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+  }
+  &-artists {
+    // background: transparent;
+    background-image: $bg-image;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    // background-color: #fff;
+
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    font-size: xx-large;
+  }
+
+  &-tickets {
+    background-image: $bg-image;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    // background-color: #fff;
+
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    // background: $bg-tickets no-repeat center left / cover;
+    font-size: xx-large;
+    font-weight: bold;
+    height: 97vh;
+  }
+}
+%title-shared {
+  font-size: 35px;
+  color: black;
+  font-weight: bold;
+  padding-top: 8%;
+  padding-left: 50px;
+  height: 30px;
+}
+
+.title-w {
+  @extend %title-shared;
+  color: #fff;
+  margin-left: 42%;
+  padding-top: 5%;
+}
+
+.title-b {
+  @extend %title-shared;
+  color: black;
+  font-weight: bold;
+}
+
+%content-shared {
+  padding-top: 140px;
+  padding-left: 0px;
+  width: 100%;
+  font-size: x-large;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.content-w {
+  @extend %content-shared;
+  color: #fff;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.content-b {
+  @extend %content-shared;
+  color: black;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+th {
+  width: 21%;
+  text-align: center;
+}
+td {
+  text-align: center;
+}
+
+.carosel {
+  width: 300px;
+  height: 200px;
+}
