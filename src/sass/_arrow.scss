@@ -1,0 +1,30 @@
+@import "./variables";
+
+.scrollTop {
+  position: fixed;
+
+  width: 5%;
+  bottom: 20px;
+  right: 5%;
+  height: 20px;
+
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  color: $green;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

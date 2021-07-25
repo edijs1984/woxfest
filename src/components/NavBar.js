@@ -17,28 +17,30 @@ function NavBar() {
         </div>
         <ul className={open ? "nav-links2" : "nav-links"}>
           <li
+            className={activeNav === 1 ? "liactive" : ""}
             onClick={() => setActiveNav(1)}
-            className={activeNav == 1 ? "liactive" : ""}
           >
-            <a href="#">sākums</a>
+            <a href="#home">sākums</a>
           </li>
           <li
             onClick={() => setActiveNav(2)}
-            className={activeNav == 2 ? "liactive" : ""}
+            className={activeNav === 2 ? "liactive" : ""}
           >
-            <a href="#">programma</a>
+            <a href="#program">programma</a>
           </li>
           <li
             onClick={() => setActiveNav(3)}
-            className={activeNav == 3 ? "liactive" : ""}
+            className={activeNav === 3 ? "liactive" : ""}
           >
-            <a href="#">mākslinieki</a>
+            <a mākslinieki href="/#artists">
+              mākslinieki
+            </a>
           </li>
           <li
             onClick={() => setActiveNav(4)}
-            className={activeNav == 4 ? "liactive" : ""}
+            className={activeNav === 4 ? "liactive" : ""}
           >
-            <a href="#">biļetes</a>
+            <a href="#tickets">biļetes</a>
           </li>
         </ul>
       </nav>

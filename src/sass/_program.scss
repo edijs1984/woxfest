@@ -1,0 +1,29 @@
+@import "./_variables.scss";
+
+.programhead {
+  display: flex;
+  width: 20%;
+  height: 40%;
+  flex-direction: column;
+  font-family: Headingfont;
+  font-size: 3rem;
+  align-content: center;
+  color: $green;
+  padding-left: 5%;
+}
+
+.programbackground {
+  width: 60%;
+  height: 80%;
+  background: black;
+  padding-top: 5%;
+}
+
+.programdate {
+  color: $green;
+  font-family: Headingfont;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

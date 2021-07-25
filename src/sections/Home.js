@@ -1,17 +1,17 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { calculate } from "../components/counter";
 function Home() {
+  const [data, setData] = useState([]);
+
   const styles = { padding: "7%", color: "white" };
   const stylesgreen = { padding: "7%", color: "#99ff00" };
 
-  var countDownDate = new Date("August 12, 2022 15:00:00").getTime();
-  var now = new Date().getTime();
-  var timeleft = countDownDate - now;
+  const res = async () => {
+    const val = await calculate();
+    setData(val);
+  };
 
-  var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+  window.setInterval(() => res(), 1000);
 
   const counterstyle = {
     marginTop: "7%",
@@ -21,12 +21,6 @@ function Home() {
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-  };
-
-  const numbergenralstyle = {
-    padding: "2%",
-    display: "flex",
-    flexDirection: "column",
   };
 
   const numberstyle = {
@@ -40,32 +34,32 @@ function Home() {
   };
 
   return (
-    <div className="section section-home">
+    <div className="section section-home" id="home">
       <div style={{ alignContent: "flex-start" }}>
-        <div style={styles}>Mūzika</div>
-        <div style={styles}>Māksla</div>
-        <div style={styles}>Teātris</div>
+        <div style={styles}>MŪZIKA</div>
+        <div style={styles}>MĀKSLA</div>
+        <div style={styles}>TEĀTRIS</div>
         <div style={stylesgreen}>12.-14.08.</div>
         <div style={stylesgreen}>2022.</div>
       </div>
       <div style={counterstyle}>
-        <div style={numbergenralstyle}>
-          {days}
+        <div style={numberstyle}>
+          {data[0]}
           <div style={textstyle}>dienas</div>
         </div>
         <div style={{ color: "white" }}>:</div>
         <div style={numberstyle}>
-          {hours}
+          {data[1]}
           <div style={textstyle}>stundas</div>
         </div>
         <div style={{ color: "white" }}>:</div>
         <div style={numberstyle}>
-          {minutes}
-          <div style={textstyle}>minutes</div>
+          {data[2]}
+          <div style={textstyle}>minūtes</div>
         </div>
         <div style={{ color: "white" }}>:</div>
         <div style={numberstyle}>
-          {seconds}
+          {data[3]}
           <div style={textstyle}>sekundes</div>
         </div>
       </div>
