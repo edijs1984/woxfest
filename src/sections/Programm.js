@@ -1,11 +1,12 @@
-import React from "react";
-
+import React, { useState } from "react";
+import {
+  listfriday,
+  listsaturday,
+  listsunday,
+} from "../components/programlist";
 function Programm() {
-  const arr = [];
-  const allTds = document.getElementsByTagName("td");
-  console.log(allTds);
-
-  // const res = arr.filter((val) => val.innerHTML.include className="tdnew"s(":"));
+  const [head, setHead] = useState("12 . AUGUSTS, PIEKTDIENA");
+  const [list, setList] = useState(listfriday);
 
   return (
     <div className="section section-program" id="program">
@@ -14,69 +15,51 @@ function Programm() {
         <div>GRA</div>
         <div>MMA</div>
       </div>
+
       <div className="programbackground">
+        <div className="btnrow">
+          <button
+            className="btn"
+            onClick={() => {
+              setHead("12 . AUGUSTS, PIEKTDIENA");
+              setList(listfriday);
+            }}
+          >
+            Piektdien 12.08
+          </button>
+          <button
+            className="btn"
+            onClick={() => {
+              setHead("13 . AUGUSTS, SESTDIENA");
+              setList(listsaturday);
+            }}
+          >
+            sestdien 13.08
+          </button>
+          <button
+            className="btn"
+            onClick={() => {
+              setHead("14 .AUGUSTS, SVĒTDIEN");
+              setList(listsunday);
+            }}
+          >
+            Svetdien 14.08
+          </button>
+        </div>
         <div className="programdate">
-          <b>12.AUGUSTS, PiEKTDIENA</b>
+          <b>{head}</b>
         </div>
         <div className="tablecontainer">
           <table className="programtable">
             <tbody>
-              <tr>
-                <td className="td-new">13:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">14:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">15:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">16:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">17:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">18:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">19:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">20:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">21:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">22:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">23:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">24:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">01:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
-              <tr>
-                <td className="td-new">02:00</td>
-                <td>Iesildīšanās</td>
-              </tr>
+              {list.map((item) => {
+                return (
+                  <tr key={item.time}>
+                    <td className="td-new">{item.time}</td>
+                    <td className="td-old">{item.action}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>

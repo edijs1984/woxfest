@@ -13,8 +13,8 @@
 }
 
 .programbackground {
-  width: 60%;
-  height: 80%;
+  width: 50%;
+  height: 95%;
   background: black;
   padding-top: 5%;
 }
@@ -26,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10%;
 }
 
 .tablecontainer {
@@ -39,20 +40,43 @@
 .programtable {
   width: 80%;
   color: white;
-  td {
-    border-bottom: 1px solid;
-    border-color: white;
-    padding: 1%;
-    margin: 2%;
-  }
 
   tr {
-    width: 100%;
+    width: 50%;
     font-family: Boldfont;
     font-size: 1rem;
   }
-  td-new {
-    padding: 1%;
-    margin: 2%;
-  }
+}
+.td-old {
+  border-bottom: 1px solid;
+  border-color: white;
+  padding: 1%;
+  margin: 2%;
+}
+
+.td-new {
+  padding: 1%;
+  margin: 2%;
+}
+
+.btnrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 1%;
+}
+.btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
 }

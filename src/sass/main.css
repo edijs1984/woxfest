@@ -272,8 +272,8 @@ a {
 }
 
 .programbackground {
-  width: 60%;
-  height: 80%;
+  width: 50%;
+  height: 95%;
   background: black;
   padding-top: 5%;
 }
@@ -291,6 +291,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 10%;
 }
 
 .tablecontainer {
@@ -315,22 +316,51 @@ a {
   color: white;
 }
 
-.programtable td {
+.programtable tr {
+  width: 50%;
+  font-family: Boldfont;
+  font-size: 1rem;
+}
+
+.td-old {
   border-bottom: 1px solid;
   border-color: white;
   padding: 1%;
   margin: 2%;
 }
 
-.programtable tr {
-  width: 100%;
-  font-family: Boldfont;
-  font-size: 1rem;
-}
-
-.programtable td-new {
+.td-new {
   padding: 1%;
   margin: 2%;
+}
+
+.btnrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 1%;
+}
+
+.btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 @font-face {
@@ -586,7 +616,8 @@ a {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: 5%;
-  height: 150vh;
+  height: 100vh;
+  padding-left: 10%;
 }
 
 .section-artists {
