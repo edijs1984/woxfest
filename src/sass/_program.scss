@@ -27,3 +27,32 @@
   justify-content: center;
   align-items: center;
 }
+
+.tablecontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.programtable {
+  width: 80%;
+  color: white;
+  td {
+    border-bottom: 1px solid;
+    border-color: white;
+    padding: 1%;
+    margin: 2%;
+  }
+
+  tr {
+    width: 100%;
+    font-family: Boldfont;
+    font-size: 1rem;
+  }
+  td-new {
+    padding: 1%;
+    margin: 2%;
+  }
+}

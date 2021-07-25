@@ -32,9 +32,7 @@ function NavBar() {
             onClick={() => setActiveNav(3)}
             className={activeNav === 3 ? "liactive" : ""}
           >
-            <a mākslinieki href="/#artists">
-              mākslinieki
-            </a>
+            <a href="/#artists">mākslinieki</a>
           </li>
           <li
             onClick={() => setActiveNav(4)}

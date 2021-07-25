@@ -293,6 +293,46 @@ a {
           align-items: center;
 }
 
+.tablecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.programtable {
+  width: 80%;
+  color: white;
+}
+
+.programtable td {
+  border-bottom: 1px solid;
+  border-color: white;
+  padding: 1%;
+  margin: 2%;
+}
+
+.programtable tr {
+  width: 100%;
+  font-family: Boldfont;
+  font-size: 1rem;
+}
+
+.programtable td-new {
+  padding: 1%;
+  margin: 2%;
+}
+
 @font-face {
   font-family: Headingfont;
   src: url("../fonts/Garbata Serif Font.ttf");
