@@ -1,11 +1,13 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-
 import { ScrollingProvider } from "react-scroll-section";
+import ScrollArrow from "./components/ScrollArrow";
+
 import Home from "./sections/Home";
 import Artists from "./sections/Artists";
 import Programm from "./sections/Programm";
-import ScrollArrow from "./components/ScrollArrow";
+import Tickets from "./sections/Tickets";
+
 import "./sass/main.scss";
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         <Home />
         <Artists id="artists" />
         <Programm />
+        <Tickets />
       </ScrollingProvider>
     </div>
   );

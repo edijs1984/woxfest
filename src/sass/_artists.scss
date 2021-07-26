@@ -1,26 +1,22 @@
 @import "./variables";
 
 .artisthead {
-  display: flex;
+  @include flexcenter();
   flex-direction: row;
-  align-content: center;
-  justify-content: center;
   padding-top: 5%;
   width: 100%;
   color: black;
   font-family: Headingfont;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .cardrow {
-  display: flex;
+  @include flexcenter();
   flex-direction: row;
   height: 13%;
   width: 100%;
-  align-content: center;
   padding-left: 20%;
   padding-right: 20%;
-  align-items: center;
   padding-top: 2%;
   justify-content: space-between;
 }
@@ -37,4 +33,31 @@
 
 .container {
   padding: 2px 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .artisthead {
+    @include flexcenter();
+    flex-direction: row;
+    padding-top: 5%;
+    width: 100%;
+    color: black;
+    font-family: Headingfont;
+    font-size: 2rem;
+  }
+  .cardrow {
+    @include flexcenter();
+    flex-direction: row;
+    height: 13%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    justify-content: space-between;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%;
+  }
 }

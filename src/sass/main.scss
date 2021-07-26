@@ -7,6 +7,8 @@
 @import "./funtions";
 @import "./artists";
 @import "./arrow";
+@import "./home";
+
 * {
   margin: 0;
   padding: 0;
@@ -14,20 +16,20 @@
 }
 .section {
   height: 100vh;
-  &-home {
-    background-image: $bg-image;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: Headingfont;
-    color: #99ff00;
-  }
+  // &-home {
+  //   background-image: $bg-image;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-color: #fff;
+  //   font-size: 2rem;
+  //   font-weight: bold;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   font-family: Headingfont;
+  //   color: #99ff00;
+  // }
   &-program {
     background-image: $bg-program;
     background-repeat: no-repeat;
@@ -49,19 +51,10 @@
   }
 
   &-tickets {
-    background-image: $bg-image;
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-image: $bg-artists;
+    background-repeat: no-repeat;
     background-size: cover;
-    // background-color: #fff;
-
-    font-size: x-large;
-    font-weight: bold;
-    color: black;
-    // background: $bg-tickets no-repeat center left / cover;
-    font-size: xx-large;
-    font-weight: bold;
-    height: 97vh;
+    height: 100vh;
   }
 }
 %title-shared {

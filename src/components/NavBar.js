@@ -14,31 +14,44 @@ function NavBar() {
           <div className="line"> </div>
           <div className="line"> </div>
           <div className="line"> </div>
+          <div className="line"> </div>
         </div>
         <ul className={open ? "nav-links2" : "nav-links"}>
           <li
             className={activeNav === 1 ? "liactive" : ""}
-            onClick={() => setActiveNav(1)}
+            onClick={() => {
+              setActiveNav(1);
+              setOpen(!open);
+            }}
           >
             <a href="#home">sākums</a>
           </li>
           <li
-            onClick={() => setActiveNav(2)}
-            className={activeNav === 2 ? "liactive" : ""}
-          >
-            <a href="#program">programma</a>
-          </li>
-          <li
-            onClick={() => setActiveNav(3)}
+            onClick={() => {
+              setActiveNav(3);
+              setOpen(!open);
+            }}
             className={activeNav === 3 ? "liactive" : ""}
           >
             <a href="/#artists">mākslinieki</a>
           </li>
           <li
-            onClick={() => setActiveNav(4)}
+            onClick={() => {
+              setActiveNav(2);
+              setOpen(!open);
+            }}
+            className={activeNav === 2 ? "liactive" : ""}
+          >
+            <a href="#program">programma</a>
+          </li>
+          <li
+            onClick={() => {
+              setActiveNav(4);
+              setOpen(!open);
+            }}
             className={activeNav === 4 ? "liactive" : ""}
           >
-            <a href="#tickets">biļetes</a>
+            <a href="/#tickets">biļetes</a>
           </li>
         </ul>
       </nav>

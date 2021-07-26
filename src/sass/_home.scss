@@ -1,0 +1,111 @@
+@import "./variables";
+@import "./images";
+.home {
+  height: 100vh;
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Headingfont;
+  color: $green;
+}
+.mob {
+  padding-top: 10%;
+}
+.styles {
+  padding: 7%;
+  color: white;
+  font-family: Headingfont;
+  font-size: 2.5rem;
+}
+.stylesgreen {
+  padding: 7%;
+  color: $green;
+  font-family: Headingfont;
+  font-size: 2.5rem;
+}
+.counterstyle {
+  @include flexcenter();
+  margin-top: 7%;
+  flex-direction: row;
+  align-content: space-between;
+  width: 100%;
+}
+.numberstyle {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+}
+.numberstyle {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+}
+
+.textstyle {
+  font-size: 1.5rem;
+  color: white;
+  font-family: Boldfont;
+  @include flexcenter();
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .section-home {
+    height: 100vh;
+    background-image: $bg-program;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Headingfont;
+    color: #99ff00;
+  }
+  .styles {
+    padding: 7%;
+    color: white;
+    font-family: Headingfont;
+    font-size: 1rem;
+  }
+  .stylesgreen {
+    padding: 2%;
+    color: $green;
+    font-family: Headingfont;
+    font-size: 1rem;
+  }
+  .mob {
+    margin-top: 50%;
+  }
+  .counterstyle {
+    @include flexcenter();
+    flex-direction: row;
+    align-content: space-between;
+    width: 90%;
+  }
+  .numberstyle {
+    @include flexcenter();
+    padding: 2%;
+    width: 80%;
+    // display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    font-size: 1.8rem;
+  }
+  .textstyle {
+    font-size: 1rem;
+    color: white;
+    padding: 6%;
+  }
+}

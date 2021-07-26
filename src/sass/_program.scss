@@ -2,12 +2,12 @@
 
 .programhead {
   display: flex;
+  align-content: center;
   width: 20%;
   height: 40%;
   flex-direction: column;
   font-family: Headingfont;
   font-size: 3rem;
-  align-content: center;
   color: $green;
   padding-left: 5%;
 }
@@ -20,31 +20,29 @@
 }
 
 .programdate {
+  @include flexspacebetween();
   color: $green;
-  font-family: Headingfont;
+  font-family: Lightfont;
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 10%;
 }
 
 .tablecontainer {
-  display: flex;
+  @include flexcenter();
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 
 .programtable {
   width: 80%;
   color: white;
+  text-align: left;
 
   tr {
     width: 50%;
-    font-family: Boldfont;
-    font-size: 1rem;
+    font-family: Lightfont;
+    font-size: 1.2rem;
+    text-align: left;
   }
 }
 .td-old {
@@ -52,24 +50,26 @@
   border-color: white;
   padding: 1%;
   margin: 2%;
+  text-align: left;
+  width: 80%;
 }
 
 .td-new {
   padding: 1%;
   margin: 2%;
+  text-align: left;
+  width: 20%;
 }
 
 .btnrow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexspacebetween();
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 1%;
 }
 .btn {
   color: black;
-  background-color: white;
+  background-color: $green;
   border: none;
   padding: 1%;
   text-align: center;

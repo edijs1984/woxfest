@@ -5,6 +5,7 @@ function Artists() {
   return (
     <div className="section section-artists" id="artists">
       <div className="artisthead">MĀKSLINIEKI</div>
+
       <div className="cardrow">
         <ArtistCard picture={a} />
         <ArtistCard picture={a} />

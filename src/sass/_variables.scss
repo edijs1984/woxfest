@@ -18,3 +18,27 @@ $green: #c2ff2e;
   font-family: Boldfont;
   src: url("../fonts/Creo-ExtraBold.ttf");
 }
+
+@mixin flex($justifyconetnt, $direction) {
+  display: flex;
+  align-items: center;
+  justify-content: $justifyconetnt;
+  flex-direction: $direction;
+}
+@mixin flexcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexspacearound {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin flexspacebetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
