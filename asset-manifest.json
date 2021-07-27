@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/woxfest/static/css/main.05417aa0.chunk.css",
-    "main.js": "/woxfest/static/js/main.0cfc4a42.chunk.js",
-    "main.js.map": "/woxfest/static/js/main.0cfc4a42.chunk.js.map",
+    "main.js": "/woxfest/static/js/main.81760b9c.chunk.js",
+    "main.js.map": "/woxfest/static/js/main.81760b9c.chunk.js.map",
     "runtime-main.js": "/woxfest/static/js/runtime-main.bff640e1.js",
     "runtime-main.js.map": "/woxfest/static/js/runtime-main.bff640e1.js.map",
     "static/js/2.7cd79d09.chunk.js": "/woxfest/static/js/2.7cd79d09.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.bff640e1.js",
     "static/js/2.7cd79d09.chunk.js",
     "static/css/main.05417aa0.chunk.css",
-    "static/js/main.0cfc4a42.chunk.js"
+    "static/js/main.81760b9c.chunk.js"
   ]
 }
