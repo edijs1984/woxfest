@@ -4,20 +4,21 @@
   background-image: $bg-program;
   background-repeat: no-repeat;
   background-size: cover;
-  flex-direction: row;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 5%;
   height: 100vh;
-  padding-left: 10%;
+  // flex-direction: row;
+  // display: flex;
+  // align-items: flex-start;
+  // justify-content: center;
+  // padding-top: 5%;
+  // padding-left: 10%;
 }
 
 .programhead {
+  padding-top: 5%;
   display: flex;
   align-content: center;
   width: 20%;
-  height: 40%;
+  height: 10%;
   flex-direction: column;
   font-family: Headingfont;
   font-size: 3rem;
@@ -26,24 +27,33 @@
 }
 
 .programbackground {
-  width: 50%;
-  height: 95%;
-  background: black;
-  padding-top: 5%;
+   @include flexcenter();
+  width: 100%;
+  // height: 95%;
+  
+  padding-top: 2%;
+  padding:3%;
+  flex-direction: column;
+  // margin:15%;
 }
 
 .programdate {
-  @include flexspacebetween();
+  // @include flexspacebetween();
   color: $green;
   font-family: Lightfont;
   font-size: 2rem;
-  height: 10%;
+  height: 0%;
 }
 
 .tablecontainer {
   @include flexcenter();
   flex-direction: row;
-  width: 100%;
+  width: 35%;
+  height: 100%;
+  background: black;
+   padding-bottom: 2.5%;
+  padding-top: 2.5%;
+
 }
 
 .programtable {
@@ -75,9 +85,7 @@
 }
 
 .btnrow {
-  @include flexspacebetween();
-  padding-left: 10%;
-  padding-right: 10%;
+  @include flexcenter();
   padding-bottom: 1%;
 }
 .btn {
@@ -89,27 +97,15 @@
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin: 4px 2px;
+  margin: 2px 30px;
   cursor: pointer;
   border-radius: 8px;
 }
 @media screen and (max-width: 768px) {
-  .program {
-    background-image: $bg-program;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // padding-top: 5%;
-    height: 100vh;
-    // padding-left: 10%;
-    width: 100%;
-    // padding-left: -2%;
-  }
+
 
   .programhead {
+    padding-top: 8%;
     display: flex;
     width: 20%;
     font-family: Headingfont;
@@ -121,31 +117,28 @@
 
   .programbackground {
     width: 100%;
-    height: 70%;
-    background: black;
-    padding: 10%;
-    // margin-top: 10%;
+    // height: 95%;
+    background: none;
+    padding: 0%;
+    margin-top: 0%;
     // margin-right: 10%;
   }
   .programdate {
-    @include flexspacebetween();
+    // @include flexspacebetween();
+    @include flexcenter();
     color: $green;
     font-family: Lightfont;
     font-size: 1.2rem;
-    height: 10%;
+    height: 5%;
   }
   .btnrow {
-    // @include flexspacebetween();
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-bottom: 3%;
-    // margin-left: -20%;
+    padding-top: 10%;
   }
   .btn {
     color: black;
     background-color: $green;
     border: none;
-    padding: 1.2%;
+    padding: 1%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -156,19 +149,25 @@
   }
   .tablecontainer {
     @include flexcenter();
-    flex-direction: row;
-    width: 100%;
+  flex-direction: row;
+  width: 80%;
+  height:50%;
+  background:none;
+   padding-bottom: 2.5%;
+  padding-top: 1%;
+  justify-content:last baseline;
+  align-items: flex-start;
   }
 
   .programtable {
-    width: 90%;
+    width: 80%;
     color: white;
     text-align: left;
 
     tr {
       width: 50%;
       font-family: Lightfont;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: left;
     }
   }
@@ -187,4 +186,9 @@
     text-align: left;
     width: 20%;
   }
+  // * {
+  //   margin: 0;
+  //   padding: 0;
+  //   box-sizing:initial;
+  // }
 }

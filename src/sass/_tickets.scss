@@ -50,4 +50,55 @@
   font-size: 2rem;
 }
 @media screen and (max-width: 768px) {
+  .tickets {
+    margin-top: 2%;
+     height:80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-content: center;
+  }
+  
+  .ticket {
+    box-shadow: 3px 3px 3px black;
+    transition: 0.3s;
+    margin: 3%;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 20px;
+    background: black;
+    height: 25%;
+    width: 90%;
+    cursor: pointer;
+    color: $green;
+  
+    &:hover {
+      color: $green;
+      box-shadow: 5px 5px 16px $green;
+    }
+  }
+  
+  .tickethead {
+    height: 20%;
+    margin-bottom: 7%;
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-family: Lightfont;
+    font-size: 1.5rem;
+  }
+  .ticketbody {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-family: Lightfont;
+    font-size: 1.5rem;
+  }
 }
