@@ -17,7 +17,7 @@ function App() {
         <ScrollArrow />
         <NavBar />
         <Home />
-        <Artists id="artists" />
+        <Artists />
         <Programm />
         <Tickets />
       </ScrollingProvider>

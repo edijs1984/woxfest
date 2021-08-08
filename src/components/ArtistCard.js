@@ -3,7 +3,12 @@ import React from "react";
 function ArtistCard({ picture }) {
   return (
     <div className="card">
-      <img src={picture} alt="Avatar" style={{ width: "100%" }} />
+      <img
+        loading="lazy"
+        src={picture}
+        alt="Avatar"
+        style={{ width: "100%", height: "100%" }}
+      />
       <div className="container">
         <h4>
           <b>John Doe</b>

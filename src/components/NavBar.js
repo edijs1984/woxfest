@@ -33,7 +33,7 @@ function NavBar() {
             }}
             className={activeNav === 3 ? "liactive" : ""}
           >
-            <a href="/#artists">mākslinieki</a>
+            <a href="#artists">mākslinieki</a>
           </li>
           <li
             onClick={() => {
@@ -51,7 +51,7 @@ function NavBar() {
             }}
             className={activeNav === 4 ? "liactive" : ""}
           >
-            <a href="/#tickets">biļetes</a>
+            <a href="#tickets">biļetes</a>
           </li>
         </ul>
       </nav>

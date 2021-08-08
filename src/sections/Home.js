@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { calculate } from "../components/counter";
+
 function Home() {
   const [data, setData] = useState([]);
 
