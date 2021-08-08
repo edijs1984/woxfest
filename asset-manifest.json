@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/woxfest/static/css/main.9990cab0.chunk.css",
-    "main.js": "/woxfest/static/js/main.90ba74a6.chunk.js",
-    "main.js.map": "/woxfest/static/js/main.90ba74a6.chunk.js.map",
+    "main.css": "/woxfest/static/css/main.7af35715.chunk.css",
+    "main.js": "/woxfest/static/js/main.2e69ec20.chunk.js",
+    "main.js.map": "/woxfest/static/js/main.2e69ec20.chunk.js.map",
     "runtime-main.js": "/woxfest/static/js/runtime-main.bff640e1.js",
     "runtime-main.js.map": "/woxfest/static/js/runtime-main.bff640e1.js.map",
     "static/js/2.7cd79d09.chunk.js": "/woxfest/static/js/2.7cd79d09.chunk.js",
     "static/js/2.7cd79d09.chunk.js.map": "/woxfest/static/js/2.7cd79d09.chunk.js.map",
     "index.html": "/woxfest/index.html",
-    "static/css/main.9990cab0.chunk.css.map": "/woxfest/static/css/main.9990cab0.chunk.css.map",
+    "static/css/main.7af35715.chunk.css.map": "/woxfest/static/css/main.7af35715.chunk.css.map",
     "static/js/2.7cd79d09.chunk.js.LICENSE.txt": "/woxfest/static/js/2.7cd79d09.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/woxfest/static/media/wox3.277ad063.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bff640e1.js",
     "static/js/2.7cd79d09.chunk.js",
-    "static/css/main.9990cab0.chunk.css",
-    "static/js/main.90ba74a6.chunk.js"
+    "static/css/main.7af35715.chunk.css",
+    "static/js/main.2e69ec20.chunk.js"
   ]
 }
